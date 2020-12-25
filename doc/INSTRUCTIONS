@@ -1,0 +1,316 @@
+General purpose:
+
+  Data Transfer Instructions
+  MOV
+  CMOVE/CMOVZ
+  CMOVNE/CMOVNZ
+  CMOVA/CMOVNBE
+  CMOVAE/CMOVNB
+  CMOVB/CMOVNAE
+  CMOVBE/CMOVNA
+  CMOVG/CMOVNLE
+  CMOVGE/CMOVNL
+  CMOVL/CMOVNGE
+  CMOVLE/CMOVNG
+  CMOVC
+  CMOVNC
+  CMOVO
+  CMOVNO
+  CMOVS
+  CMOVNS
+  CMOVP/CMOVPE
+  CMOVNP/CMOVPO
+  XCHG
+  BSWAP
+  XADD
+  CMPXCHG
+  CMPXCHG8B
+  PUSH
+  POP
+  CWD/CDQ
+  CBW/CWDE
+  MOVSX
+  MOVZX
+  
+  Binary Arithmetic Instructions
+  ADD
+  ADC
+  SUB
+  SBB
+  IMUL
+  MUL
+  IDIV
+  DIV
+  INC
+  DEC
+  NEG
+  CMP
+  
+  Logical Instructions
+  AND
+  OR
+  XOR
+  NOT
+  
+  Shift and Rotate Instructions
+  SAR
+  SHR
+  SAL/SHL
+  SHRD
+  SHLD
+  ROR
+  ROL
+  RCR
+  RCL
+  
+  Bit and Byte Instructions
+  BT
+  BTS
+  BTR
+  BTC
+  BSF
+  BSR
+  SETE/SETZ
+  SETNE/SETNZ
+  SETA/SETNBE
+  SETAE/SETNB/SETNC
+  SETB/SETNAE/SETC
+  SETBE/SETNA
+  SETG/SETNLE
+  SETGE/SETNL
+  SETL/SETNGE
+  SETLE/SETNG
+  SETS
+  SETNS
+  SETO
+  SETNO
+  SETPE/SETP
+  SETPO/SETNP
+  TEST
+  
+  Control Transfer Instructions
+  JMP
+  JE/JZ
+  JNE/JNZ
+  JA/JNBE
+  JAE/JNB
+  JB/JNAE
+  JBE/JNA
+  JG/JNLE
+  JGE/JNL
+  JL/JNGE
+  JLE/JNG
+  JC
+  JNC
+  JO
+  JNO
+  JS
+  JNS
+  JPO/JNP
+  JPE/JP
+  JCXZ/JECXZ
+  LOOP
+  LOOPZ/LOOPE
+  LOOPNZ/LOOPNE
+  CALL
+  RET
+  IRET
+  INT
+  ENTER
+  LEAVE
+  
+  String Instructions
+  MOVS/MOVSB
+  MOVS/MOVSW
+  MOVS/MOVSD
+  CMPS/CMPSB
+  CMPS/CMPSW
+  CMPS/CMPSD
+  SCAS/SCASB
+  SCAS/SCASW
+  SCAS/SCASD
+  LODS/LODSB
+  LODS/LODSW
+  LODS/LODSD
+  STOS/STOSB
+  STOS/STOSW
+  STOS/STOSD
+  REP
+  REPE/REPZ
+  REPNE/REPNZ
+  
+  I/O Instructions
+  IN
+  OUT
+  INS/INSB
+  INS/INSW
+  INS/INSD
+  OUTS/OUTSB
+  OUTS/OUTSW
+  OUTS/OUTSD
+  
+  Enter and Leave Instructions
+  ENTER
+  LEAVE
+  
+  Flag Control (EFLAG) Instructions
+  STC
+  CLC
+  CMC
+  CLD
+  STD
+  LAHF
+  SAHF
+  PUSHF/PUSHFD
+  POPF/POPFD
+  STI
+  CLI
+  
+  Segment Register Instructions
+  LFS
+  LGS
+  LSS
+  
+  Miscellaneous Instructions
+  LEA
+  NOP
+  UD2
+  XLAT/XLATB
+  CPUID
+  PREFETCHW
+  PREFETCHWT1
+  CLFLUSH
+  CLFLUSHOPT
+  
+  User Mode Extended Sate Save/Restore Instructions
+  XSAVE
+  XSAVEC
+  XSAVEOPT
+  XRSTOR
+  
+  Random Number Generator Instructions
+  RDRAND
+  RDSEED
+
+IA-32e mode: 64-bit mode instructions:
+
+  CDQE
+  CMPSQ
+  CMPXCHG16B
+  LODSQ
+  MOVSQ
+  MOVZX
+  STOSQ
+  SYSCALL
+  SYSRET
+
+x87 FPU:
+
+  x87 FPU Data Transfer Instructions
+  FLD
+  FST
+  FSTP
+  FILD
+  FIST
+  FISTP
+  FBLD
+  FBSTP
+  FXCH
+  FCMOVE
+  FCMOVNE
+  FCMOVB
+  FCMOVBE
+  FCMOVNB
+  FCMOVNBE
+  FCMOVU
+  FCMOVNU
+  
+  x87 FPU Basic Arithmetic Instructions
+  FADD
+  FADDP
+  FIADD
+  FSUB
+  FSUBP
+  FISUB
+  FSUBR
+  FSUBRP
+  FISUBR
+  FMUL
+  FMULP
+  FIMUL
+  FDIV
+  FDIVP
+  FIDIV
+  FDIVR
+  FDIVRP
+  FIDIVR
+  FPREM
+  FPREM1
+  FABS
+  FCHS
+  FRNDINT
+  FSCALE
+  FSQRT
+  FXTRACT
+  
+  x87 FPU Comparison Instructions
+  FCOM
+  FCOMP
+  FCOMPP
+  FUCOM
+  FUCOMP
+  FUCOMPP
+  FICOM
+  FICOMP
+  FCOMI
+  FUCOMI
+  FCOMIP
+  FUCOMIP
+  FTST
+  FXAM
+  
+  x87 FPU Transcendental Instructions
+  FSIN
+  FCOS
+  FSINCOS
+  FPTAN
+  FPATAN
+  F2XM1
+  FYL2X
+  FYL2XP1
+  
+  x87 FPU Load Constants Instructions
+  FLD1
+  FLDZ
+  FLDPI
+  FLDL2E
+  FLDLN2
+  FLDL2T
+  FLDLG2
+  
+  x87 FPU Control Instructions
+  FINCSTP
+  FDECSTP
+  FFREE
+  FINIT
+  FNINIT
+  FCLEX
+  FNCLEX
+  FSTCW
+  FNSTCW
+  FLDCW
+  FSTENV
+  FNSTENV
+  FLDENV
+  FSAVE
+  FNSAVE
+  FRSTOR
+  FSTSW
+  FNSTSW
+  WAIT/FWAIT
+  FNOP
+
+x87 FPU and SIMD State Management:
+
+  FXSAVE
+  FXRSTOR
