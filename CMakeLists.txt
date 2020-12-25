@@ -24,17 +24,15 @@ endif(CMAKE_BUILD_TYPE STREQUAL "Release")
 message(STATUS "Flags: " ${CMAKE_CXX_FLAGS})
 
 ## Dependencies
-find_package(GTest REQUIRED)
 find_package(zydis REQUIRED)
-include(CTest)
 
-include_directories(include ${GTEST_INCLUDE_DIRS} ${zydis_INCLUDE_DIR})
+include_directories(include ${zydis_INCLUDE_DIR})
 link_directories(${zydis_LIB_DIR})
 
 add_executable(ld64_tables src/ld64_tables.cpp)
 
 add_executable(ld64_test src/ld64_test.cpp)
-target_link_libraries(ld64_test pthread "Zydis")
+target_link_libraries(ld64_test "Zydis")
 
 add_executable(ld64asm_test src/ld64asm_test.cpp)
-target_link_libraries(ld64asm_test pthread "Zydis")
+target_link_libraries(ld64asm_test "Zydis")
